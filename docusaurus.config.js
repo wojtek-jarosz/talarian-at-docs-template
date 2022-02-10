@@ -81,7 +81,7 @@ module.exports = {
           "items": [
             { 
               "label": "Getting started",
-              "to": "/getting-started/"
+              "to": "https://support.awesome-table.com/hc/en-us/categories/360000107265-Getting-Started"
             },
             {
               "label": "Help center",
@@ -93,7 +93,7 @@ module.exports = {
             },
             {
               "label": "Release notes",
-              "to": "/release-notes/"
+              "to": "https://support.awesome-table.com/hc/en-us/sections/115000918945"
             }
           ],
         },
