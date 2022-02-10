@@ -41,6 +41,14 @@ html[data-theme='dark'] {
   --ifm-navbar-background-color: rgb(28, 30, 33);
 }
 
+html[data-theme='dark'] ol ol li:before {
+  color: rgb(0, 0, 0);
+}
+
+html[data-theme='dark'] ol li:before {
+  color: rgb(0, 0, 0);
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
