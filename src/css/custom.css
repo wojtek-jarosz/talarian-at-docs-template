@@ -26,6 +26,7 @@
   --ifm-font-family-monospace: 'Roboto Mono';
   --ifm-font-family-concept-headings: 'Lexend Deca';
   --ifm-font-family-task-headings: 'Lexend Deca';
+  --ifm-footer-background-color: rgb(22, 16, 50);
   --doc-sidebar-width: 500px !important;
 }
 
@@ -172,9 +173,10 @@ header > h1 {
 
 .ol.steps::before {
   content: "Procedure";
-  font-family: var(--ifm-font-family-sections);
+  font-family: var(--ifm-font-family-task-headings);
   font-weight: 500;
   font-size: 150%;
+  /* The margin for the Procedure heading differs from Prereqs, About.., and Result because the list squares increase the left-margin of steps  */
   margin-left: -2rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -183,7 +185,7 @@ header > h1 {
 
 .section.prereq::before {
   content: "Prerequisites";
-  font-family: var(--ifm-font-family-sections);
+  font-family: var(--ifm-font-family-task-headings);
   font-weight: 500;
   font-size: 150%;
   margin-top: 1rem;
@@ -193,7 +195,7 @@ header > h1 {
 
 .section.context::before {
   content: "About this task";
-  font-family: var(--ifm-font-family-sections);
+  font-family: var(--ifm-font-family-task-headings);
   font-weight: 500;
   font-size: 150%;
   margin-top: 0.5rem;
@@ -203,7 +205,7 @@ header > h1 {
 
 .section.result::before {
   content: "Result";
-  font-family: var(--ifm-font-family-sections);
+  font-family: var(--ifm-font-family-task-headings);
   font-weight: 500;
   font-size: 150%;
   margin-top: 2rem;
@@ -213,7 +215,7 @@ header > h1 {
 
 .section.postreq::before {
   content: "What's next";
-  font-family: var(--ifm-font-family-sections);
+  font-family: var(--ifm-font-family-task-headings);
   font-weight: 500;
   font-size: 150%;
   margin-top: 2rem;
