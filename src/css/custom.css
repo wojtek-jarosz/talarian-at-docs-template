@@ -159,7 +159,11 @@ abbr[title] {
 /* Apply Lexend Deca to topic title */
 
 header > h1 {
-  font-family: var(--ifm-font-family-sections);
+  font-family: var(--ifm-font-family-concept-headings);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-font-family-concept-headings);
 }
 
 /* 
