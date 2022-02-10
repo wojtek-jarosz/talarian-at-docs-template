@@ -252,3 +252,72 @@ header > h1 {
 .section.postreq {
   order: 6;
 }
+
+ol.steps {
+    display: block;
+    padding: 0 0 0 30px;
+    list-style: none;
+    overflow: hidden;
+    counter-reset: numList;
+}
+ol.steps li {
+    position: relative;
+}
+ol.steps li:before {
+    counter-increment: numList;
+    content: counter(numList);
+    
+    float: left;
+    position: absolute;
+    left: -27px;
+    top: 1.5px;
+    
+    font: bold 16px sans-serif;
+    font-family: var(--ifm-font-family-base);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    line-height: 23px;
+    
+    width: 23px; height: 23px;
+    background: var(--ifm-color-primary);;
+    
+    -moz-border-radius: 999px;
+    border-radius: 999px
+}
+
+ol ol.substeps {
+    display: block;
+    padding: 0 0 0 30px;
+    list-style: none;
+    overflow: hidden;
+    counter-reset: numList;
+}
+
+ol ol.substeps li {
+    position: relative;
+}
+ol ol.substeps li:before {
+    counter-increment: numList;
+    content: counter(numList, lower-alpha);
+    
+    float: left;
+    position: absolute;
+    left: -27px;
+    top: 1.5px;
+    
+    font: bold 16px sans-serif;
+    font-family: var(--ifm-font-family-base);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    line-height: 23px;
+    
+    width: 23px; height: 23px;
+    background: var(--ifm-color-primary);
+    
+    -moz-border-radius: 999px;
+    border-radius: 999px
+}
+
+ol.steps ul li:before {
+  content: none;
+}
