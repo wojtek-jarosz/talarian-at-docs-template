@@ -24,7 +24,8 @@
   --ifm-font-size-base: 100%;
   --ifm-font-family-base: Inter;
   --ifm-font-family-monospace: 'Roboto Mono';
-  --ifm-font-family-sections: 'Lexend Deca';
+  --ifm-font-family-concept-headings: 'Lexend Deca';
+  --ifm-font-family-task-headings: 'Lexend Deca';
   --doc-sidebar-width: 500px !important;
 }
 
