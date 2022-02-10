@@ -1,30 +1,134 @@
 module.exports = {
-  "title": "My Site",
+  "title": "Awesome Table Documentation",
   "tagline": "The tagline of my site",
   "url": "https://your-docusaurus-test-site.com",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "favicon": "img/favicon.ico",
-  "organizationName": "your-org", // Usually your GitHub org/user name.
-  "projectName": "docusaurus", // Usually your repo name.
+  "organizationName": "your-org",
+  "projectName": "docusaurus",
   "themeConfig": {
-//    "algolia": {
-//      "apiKey": "YOUR_API_KEY",
-//      "indexName": "YOUR_INDEX_NAME",
-//    },
+    "hideableSidebar": true,
     "navbar": {
-      "title": "My Site",
+      "style": "primary",
       "logo": {
-        "alt": "My Site Logo",
-        "src": "img/logo.svg",
+        "alt": "Awesome Table Documentation",
+        "src": "img/awesome-table-support-logo.svg"
       },
-      "items": [],
+      "items": [
+        {
+          "type": 'search',
+          "position": 'right',
+        }
+      ],
     },
     "footer": {
-      "style": "dark",
-      "links": [],
-      "copyright": `Copyright © ${new Date().getFullYear()}.`,
-    },
+      "links": [
+        { 
+          "items": [
+            {
+              "html": `
+                    <img src="/img/awesome-table-logo-text.svg" alt="Awesome Table" width="189" height="34" />
+                    <ul class="footer-social-items">
+                      <li>
+                        <a href="https://twitter.com/awesome_table" target="_blank" rel="noreferrer noopener" aria-label="Awesome Table on Twitter">
+                          <img src="/img/social-twitter-icon.svg" alt="Awesome Table on Twitter" width="25" height="25" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.youtube.com/channel/UCgIEKXZVXEPZNOA21Pu4LQw" target="_blank" rel="noreferrer noopener" aria-label="Awesome Table on YouTube">
+                          <img src="/img/social-youtube-icon.svg" alt="Awesome Table on YouTube" width="25" height="25" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/showcase/awesometable/" target="_blank" rel="noreferrer noopener" aria-label="Awesome Table on LinkedIn">
+                          <img src="/img/social-linkedin-icon.svg" alt="Awesome Table on LinkedIn" width="25" height="25" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.facebook.com/Awesome-Table-102914891698074/" target="_blank" rel="noreferrer noopener" aria-label="Awesome Table on Facebook">
+                          <img src="/img/social-facebook-icon.svg" alt="Awesome Table on Facebook" width="25" height="25" />
+                        </a>
+                      </li>
+                    </ul>
+                `,
+            },
+          ]
+        },
+        {
+          "title": "Product",
+          "items": [
+            { 
+              "label": "Use cases",
+              "to": "https://awesome-table.com/use-cases"
+            },
+            {
+              "label": "Features",
+              "to": "https://awesome-table.com/#Features"
+            },
+            {
+              "label": "Pricing",
+              "to": "https://awesome-table.com/pricing"
+            },
+            {
+              "label": "Go to Awesome Table",
+              "to": "https://app.awesome-table.com/"
+            }
+          ],
+        },
+        {
+          "title": "Resources",
+          "items": [
+            { 
+              "label": "Getting started",
+              "to": "/getting-started/"
+            },
+            {
+              "label": "Help center",
+              "to": "https://awesome-table.com/docs/en-us"
+            },
+            {
+              "label": "Contact support",
+              "to": "https://support.awesome-table.com/hc/en-us/requests/new"
+            },
+            {
+              "label": "Release notes",
+              "to": "/release-notes/"
+            }
+          ],
+        },
+        {
+          "title": "Legal",
+          "items": [
+            { 
+              "label": "Terms of service",
+              "to": "https://awesome-table.com/terms-of-service"
+            },
+            {
+              "label": "Privacy policy",
+              "to": "https://awesome-table.com/privacy-policy"
+            },
+            {
+              "label": "Cookie policy",
+              "to": "https://awesome-table.com/cookie-policy"
+            },
+            {
+              "label": "Google disclosure",
+              "to": "https://awesome-table.com/google-disclosure"
+            },
+            {
+              "label": "DPA",
+              "to": "https://awesome-table.com/data-processing-agreement"
+            },
+            {
+              "label": "Impressum",
+              "to": "https://awesome-table.com/impressum"
+            },
+          ],
+        },
+      ],
+      "copyright": "Copyright © 2022 Talarian Sàrl. All rights reserved.",
+    }
   },
   "presets": [
     [
@@ -32,25 +136,13 @@ module.exports = {
       {
         "docs": {
           "routeBasePath": "/",
-          "sidebarPath": require.resolve("./sidebars.js"),
-          // In order to display a link to edit your documents, please change this value.
-          // Refer to Docusaurus v2 documentation for more info.
-          // "editUrl": "http://easydita.com",
+          "sidebarPath": require.resolve('./sidebars.js')
         },
         "theme": {
-          "customCss": require.resolve("./src/css/custom.css"),
-        },
-      },
-    ],
+          "customCss": require.resolve('./src/css/custom.css')
+        }
+      }
+    ]
   ],
-  "plugins": [
-    // To enable the local search functionality, uncomment the following code:
-    // [require.resolve("@cmfcmf/docusaurus-search-local"), {
-    // "indexDocs": true,
-    //     "docsRouteBasePath": "/",
-    //     "indexDocSidebarParentCategories": 3,
-    //     "indexPages": false,
-    //     "language": "en"
-    // }]
-  ],
+  "plugins": []
 };
