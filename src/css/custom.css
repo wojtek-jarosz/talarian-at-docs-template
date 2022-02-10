@@ -49,6 +49,29 @@ html[data-theme='dark'] ol li:before {
   color: rgb(0, 0, 0);
 }
 
+.footer {
+  --ifm-footer-color: var(--ifm-footer-link-color);
+  --ifm-footer-link-color: var(--ifm-color-secondary);
+  --ifm-footer-title-color: var(--ifm-color-white);
+}
+
+.footer-social-items {
+  list-style: none;
+  display:  flex;
+  flex-flow: row nowrap;
+  gap: 0.5em;
+  margin: 0;
+  padding: 0;
+}
+
+footer > img {
+  align-content: left;
+}
+
+.footer-social-items > li {
+
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
