@@ -13,19 +13,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: rgb(0, 150, 136);
+  --ifm-color-primary-dark: rgb(0, 135, 122);
+  --ifm-color-primary-darker: rgb(0, 128, 116);
+  --ifm-color-primary-darkest: rgb(0, 105, 95);
+  --ifm-color-primary-light: rgb(0, 165, 150);
+  --ifm-color-primary-lighter: rgb(0, 173, 156);
+  --ifm-color-primary-lightest: rgb(0, 195, 177);
   --ifm-code-font-size: 95%;
   --ifm-font-size-base: 100%;
   --ifm-font-family-base: Inter;
   --ifm-font-family-monospace: 'Roboto Mono';
   --ifm-font-family-sections: 'Lexend Deca';
   --doc-sidebar-width: 500px !important;
+}
+
+html[data-theme='dark'] {
+  --ifm-color-primary:rgb(255, 185, 15);
+  --ifm-color-primary-dark: rgb(243, 172, 0);
+  --ifm-color-primary-darker: rgb(230, 163, 0);
+  --ifm-color-primary-darkest: rgb(189, 134, 0);
+  --ifm-color-primary-light: rgb(255, 193, 42);
+  --ifm-color-primary-lighter: rgb(255, 197, 56);
+  --ifm-color-primary-lightest: rgb(255, 209, 96);
+  --ifm-footer-background-color: rgb(28, 30, 33);
+  --ifm-navbar-background-color: rgb(28, 30, 33);
 }
 
 .docusaurus-highlight-code-line {
