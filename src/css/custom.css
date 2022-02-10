@@ -1,0 +1,209 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+@import "modules/notes.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%;
+  --ifm-font-size-base: 100%;
+  --ifm-font-family-base: Inter;
+  --ifm-font-family-monospace: 'Roboto Mono';
+  --ifm-font-family-sections: 'Lexend Deca';
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+table {
+    width: 100%;
+}
+
+.markdown li > p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.pre {
+  background-color: var(--ifm-pre-background);
+  border-radius: var(--ifm-pre-border-radius);
+  color: var(--ifm-pre-color);
+  font: var(--ifm-code-font-size)/var(--ifm-pre-line-height) var(--ifm-font-family-monospace);
+  margin: 0 0 var(--ifm-spacing-vertical);
+  overflow: auto;
+  padding: var(--ifm-pre-padding);
+  word-wrap: normal;
+  display: block;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+.ph {
+    display: inline;
+    /* background-color: var(--ifm-pre-background); */
+    border-radius: var(--ifm-pre-border-radius);
+    color: var(--ifm-pre-color);
+    /* font: var(--ifm-code-font-size)/var(--ifm-pre-line-height) var(--ifm-font-family-monospace); */
+    word-wrap: normal;
+    /* font-family: monospace; */
+    white-space: pre-wrap;
+}
+
+.markdown {
+    --ifm-h1-vertical-rhythm-top: 0; 
+}
+
+.anchor_top_offset::before {
+    top: calc(var(--ifm-navbar-height) * -1);
+    content: '';
+    display: block;
+    height: calc(var(--ifm-navbar-height));
+    margin-top: calc(var(--ifm-navbar-height) * -1);
+    visibility: hidden;
+}
+
+/* Wrap long lines of text in codeblocks */
+code {
+  white-space: pre-wrap;
+}
+
+span .ph.cmd {
+  font-family: var(--ifm-font-family-base);
+}
+
+/* Bold <uicontrol> */
+.ph.uicontrol {
+  font-weight: 900;
+}
+
+/* Italics <wintitle> */
+.keyword.wintitle {
+  font-style: italic;
+}
+
+/* use a., b., c. for <substeps> */
+.li.substep.substepexpand {
+  list-style-type: lower-latin;
+}
+
+/* Remove underline from gt symbol between <uicontrol> in <menucascade> */
+abbr[title] {
+  text-decoration: none;
+}
+
+/* Apply Lexend Deca to topic title */
+
+header > h1 {
+  font-family: var(--ifm-font-family-sections);
+}
+
+/* 
+  Add section headings:
+    About this task, 
+    Prerequisites,
+    Procedure,
+    Result,
+    What's next
+*/
+
+.ol.steps::before {
+  content: "Procedure";
+  font-family: var(--ifm-font-family-sections);
+  font-weight: 500;
+  font-size: 150%;
+  margin-left: -2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.section.prereq::before {
+  content: "Prerequisites";
+  font-family: var(--ifm-font-family-sections);
+  font-weight: 500;
+  font-size: 150%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.section.context::before {
+  content: "About this task";
+  font-family: var(--ifm-font-family-sections);
+  font-weight: 500;
+  font-size: 150%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.section.result::before {
+  content: "Result";
+  font-family: var(--ifm-font-family-sections);
+  font-weight: 500;
+  font-size: 150%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.section.postreq::before {
+  content: "What's next";
+  font-family: var(--ifm-font-family-sections);
+  font-weight: 500;
+  font-size: 150%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Fix the order of appearance of Task sections; swap <context> and <prereq> */
+
+.theme-doc-markdown {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section.header {
+  order: 1;
+}
+
+.section.context {
+  order: 2;
+}
+
+.section.prereq {
+  order: 3;
+}
+
+.ol.steps {
+  order: 4;
+}
+
+.section.result {
+  order: 5;
+}
+
+.section.postreq {
+  order: 6;
+}
