@@ -1,5 +1,3 @@
-const convertYoutubeEmbeds = require('./src/remark/convertYoutubeEmbeds.js');
-
 module.exports = {
   "title": "Awesome Table Documentation",
   "tagline": "The tagline of my site",
@@ -139,7 +137,7 @@ module.exports = {
         "docs": {
           "routeBasePath": "/",
           "sidebarPath": require.resolve('./sidebars.js'),
-          "remarkPlugins": [convertYoutubeEmbeds],
+          "remarkPlugins": [require('./src/remark/convertYoutubeEmbeds.js')],
         },
         "theme": {
           "customCss": require.resolve('./src/css/custom.css')
