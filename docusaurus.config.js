@@ -137,7 +137,10 @@ module.exports = {
         "docs": {
           "routeBasePath": "/",
           "sidebarPath": require.resolve('./sidebars.js'),
-          "remarkPlugins": [require('./src/remark/convertYoutubeEmbeds.js'), require('./src/remark/swapContextAndPrereq.js')],
+          "remarkPlugins": [
+            require('./src/remark/convertYoutubeEmbeds.js'), 
+            require('./src/remark/swapContextAndPrereq.js'),
+            require('./src/remark/createAwesomeTableEmbeds.js')],
         },
         "theme": {
           "customCss": require.resolve('./src/css/custom.css')
