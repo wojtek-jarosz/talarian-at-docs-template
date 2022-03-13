@@ -229,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Fix the order of appearance of Task sections; swap <context> and <prereq> */
 
-.theme-doc-markdown {
+/* .theme-doc-markdown {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -257,7 +257,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section.postreq {
   order: 6;
-}
+} */
 
 ol.steps {
     display: block;
