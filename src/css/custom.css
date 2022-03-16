@@ -166,23 +166,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--ifm-font-family-concept-headings);
 }
 
-/* 
-  Add section headings:
-    About this task, 
-    Prerequisites,
-    Procedure,
-    Result,
-    What's next
-*/
+/* Task topic - Add section titles */
 
-.ol.steps::before {
+.section.prereq + .ol.steps::before, .section.context + .ol.steps::before, .shortdesc + .ol.steps::before {
   content: "Procedure";
   font-family: var(--ifm-font-family-task-headings);
   font-weight: 500;
   font-size: 150%;
   /* The margin for the Procedure heading differs from Prereqs, About.., and Result because the list squares increase the left-margin of steps  */
   margin-left: -2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   display: block;
 }
