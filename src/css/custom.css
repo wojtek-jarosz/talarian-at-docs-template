@@ -227,6 +227,38 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+/* Troubleshooting topic - Add section titles */
+
+.section.condition::before {
+  content: "Issue";
+  font-family: var(--ifm-font-family-task-headings);
+  font-weight: 500;
+  font-size: 150%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.section.cause::before {
+  content: "Cause";
+  font-family: var(--ifm-font-family-task-headings);
+  font-weight: 500;
+  font-size: 150%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.section.remedy::before {
+  content: "Solution";
+  font-family: var(--ifm-font-family-task-headings);
+  font-weight: 500;
+  font-size: 150%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
 ol.steps {
     display: block;
     padding: 0 0 0 30px;
